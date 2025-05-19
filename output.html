@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>مباريات البث المباشر</title>
+<style>
+    body {
+        zoom: 65%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Tajawal', Arial, sans-serif;
+        background-color: #f5f7fa;
+        color: #333;
+    }
+    .site-header {
+        background: linear-gradient(135deg, #2c3e50, #1a2530);
+        color: white;
+        padding: 1.5rem 0;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .site-title {
+        margin: 0;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: -1px;
+    }
+    .site-slogan {
+        margin: 0.5rem 0 0;
+        font-size: 1.1rem;
+        opacity: 0.9;
+    }
+    .matches-list {
+        max-width: 960px;
+        margin: 2rem auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .today-title {
+        f font-size: 14px;  /* صغير */
+        font-weight: 300; /* خط خفيف */
+        text-align: right; /* على اليمين */
+        border-bottom: 1.5px solid #555; /* خط صغير تحت العنوان */
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+        max-width: 200px;
+        margin-left: auto; /* لدفع العنوان لليمين */
+        color: #333;
+    }
+    .match-item {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        padding: 1rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        direction: rtl;
+    }
+    .team-name {
+        font-size: 1.4rem;
+        font-weight: 700;
+        width: 150px;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .match-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.3rem;
+        min-width: 250px;
+    }
+    .match-time {
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: #e74c3c;
+    }
+    .channel, .commentator {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #555;
+    }
+    .watch-btn {
+        mmargin-top: 0.7rem;
+        width: 100%;
+        max-width: 100%;
+        padding: 0.5rem 0;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        ont-size: 1.1rem;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+        text-align: center;
+    }
+    .watch-btn:hover {
+        background-color: #2980b9;
+    }
+    .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        min-width: 250px;
+    }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header class="site-header">
+    <div class="header-content">
+        <h1 class="site-title">بث مباشر</h1>
+        <p class="site-slogan">مشاهدة المباريات بث مباشر بكل الجودات</p>
+    </div>
+</header>
+
+<main class="matches-list">
+    <h2 class="today-title">مباريات اليوم</h2>
+    
+    <div class="match-item">
+        <div class="team-name">إنتر ميامي</div>
+        <div class="center-container">
+            <div class="match-time">02:00</div>
+            <div class="channel">ON Sports HD</div>
+            <div class="commentator">غير معروف</div>
+            <a href="player.html?video=https://see.kora999.site/albaplayer/p18/" target="_blank" class="watch-btn">مشاهدة المباراة</a>
+        </div>
+        <div class="team-name">أورلاندو سيتي</div>
+    </div>
+    
+    <div class="match-item">
+        <div class="team-name">برايتون</div>
+        <div class="center-container">
+            <div class="match-time">22:00</div>
+            <div class="channel">beIN SPORTS 1 HD</div>
+            <div class="commentator">عصام الشوالي</div>
+            <a href="player.html?video=/matches-today/" target="_blank" class="watch-btn">مشاهدة المباراة</a>
+        </div>
+        <div class="team-name">ليفربول</div>
+    </div>
+    
+</main>
+</body>
+</html>
